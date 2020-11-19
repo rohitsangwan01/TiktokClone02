@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_view"
+        android:layout_width="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:resize_mode="fill"
+        android:layout_alignParentBottom="true"
+        android:layout_height="fill_parent"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/video_progress_bar"
+        android:layout_centerInParent="true"
+        app:SpinKit_Style="WanderingCubes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:layout_marginBottom="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="50dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:src="@drawable/placeholder_profile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/follow_side_nav_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/like"
+                android:tint="#fff"
+                android:src="@drawable/like_side_nav_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/like_count_tv"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="2.8M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:backgroundTint="#fff"
+                android:src="@drawable/comment_side_nav_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/comment_count_tv"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="2.8M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:alpha="0.8"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/share"
+                android:backgroundTint="#fff"
+                android:src="@drawable/share_side_nav_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/share_count_tv"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="2.8M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_alignParentRight="true"
+            app:civ_border_width="8dp"
+            app:civ_border_color="@color/black"
+            android:scaleType="centerInside"
+            app:civ_circle_color="@color/white"
+            app:civ_shadow_radius="20dp"
+            android:src="@drawable/placeholder_profile_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="\@pvaindia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/tags"
+                android:textColor="@android:color/white"
+                android:text="We build digital products."
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

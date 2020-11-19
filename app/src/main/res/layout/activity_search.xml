@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="56sp">
+        <ImageView
+            android:background="?actionBarItemBackground"
+            android:id="@+id/back"
+            android:layout_width="25sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_btn_icon"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16sp"/>
+        <TextView
+            android:id="@+id/heading"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Text"
+            android:maxLines="1"
+            android:layout_marginStart="-40dp"
+            android:textColor="#000"/>
+    </GridLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"/>
+    <LinearLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:SpinKit_Color="#000"
+            app:SpinKit_Style="ThreeBounce"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:spanCount="2"
+        android:id="@+id/recyclerview"/>
+</LinearLayout>

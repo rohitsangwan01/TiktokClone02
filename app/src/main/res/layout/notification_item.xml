@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="14dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        app:civ_border="false"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/profile_pic"
+        android:src="@drawable/placeholder_profile_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:id="@+id/heading"
+        android:layout_toEndOf="@id/profile_pic"
+        android:text="\@ritikkanotra started following you."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/time_difference"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="16h"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:layout_below="@id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

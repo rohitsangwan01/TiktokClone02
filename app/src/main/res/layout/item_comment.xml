@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:id="@+id/layout"
+    android:background="#151414"
+    android:orientation="horizontal">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:background="@drawable/white_bg_rounded"
+        android:src="@drawable/ic_baseline_person_24"/>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/uname"
+            android:layout_marginStart="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E91E63"
+            android:text="Username"/>
+        <TextView
+            android:id="@+id/comment"
+            android:layout_marginStart="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="djfhjadfjadjajas;da;a;d;adaasd;a;"/>
+    </LinearLayout>
+
+</LinearLayout>

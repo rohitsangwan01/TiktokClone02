@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kalakar</string>
+    <string name="privacy_policy_alert">Logging in or registering means you agree\nTikTok\'s
+        Terms of Use or Privacy Policy </string>
+    <string name="otp_notice">An authentication code has been\nsent to (+91) </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vidimg">VidImg</string>
+    <string name="logout">Logout</string>
+</resources>

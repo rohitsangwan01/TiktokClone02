@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+<!--    <color name="colorPrimaryDark">#75398A</color>-->
+<!--    <color name="colorPrimaryDark">#9147AB</color>-->
+    <color name="colorPrimaryDark">#171717</color>
+    <color name="colorAccent">#7C4DFF</color>
+    <color name="darkerGrey">#2B2B2B</color>
+    <color name="grey">#636363</color>
+    <color name="darkestGrey">#171717</color>
+    <color name="darkBrown">#A2223F</color>
+    <color name="darkGreen">#0D5E1C</color>
+    <color name="videoActionsTintColor">#e6e6e6</color>
+</resources>

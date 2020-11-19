@@ -1,0 +1,169 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
+
+apply plugin: 'kotlin-kapt'
+
+buildscript {
+    apply from: 'versions.gradle'
+}
+
+android {
+    compileSdkVersion compile_sdkVersion
+
+    defaultConfig {
+
+        // ARGear Console Project Application ID
+        applicationId "com.pvaindia.tiktokclone0"
+
+        // Android SDK Platform version 6.0 (API level 23) or higher
+        minSdkVersion min_sdkVersion
+        targetSdkVersion target_sdkVersion
+        versionCode 201035
+        versionName "0.25b"
+
+        testInstrumentationRunner "androidx.item_comment.runner.AndroidJUnitRunner"
+
+//        ndk {
+//            abiFilters 'armeabi-v7a', 'arm64-v8a'
+//        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+//    implementation fileTree(dir: "libs", include: ["*.jar"])
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+//    implementation 'androidx.core:core-ktx:1.3.1'
+//    implementation 'androidx.appcompat:appcompat:1.1.0'
+//    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+//    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+//    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'androidx.item_comment.ext:junit:1.1.1'
+//    androidTestImplementation 'androidx.item_comment.espresso:espresso-core:3.2.0'
+//
+//
+//    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+//    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+//
+//    // To add ARGear library
+////    implementation (name: 'ARGear-release-0.1.0', ext:'aar')
+//    implementation (name: 'argear_0.5.0', ext:'aar')
+//
+//    // To add TensorFlow Lite library
+//    implementation 'org.tensorflow:tensorflow-lite:1.14.0'
+//    implementation 'org.tensorflow:tensorflow-lite-gpu:1.14.0'
+//
+//    // To add Retrofit library
+//    implementation "com.squareup.retrofit2:retrofit:2.4.0"
+//    implementation "com.squareup.retrofit2:converter-gson:2.4.0"
+//    implementation "com.squareup.okhttp3:logging-interceptor:3.10.0"
+//
+//    // To add gson library
+//    implementation "com.google.code.gson:gson:2.8.5"
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.appcompat:appcompat:$appcompactVersion"
+    implementation "androidx.core:core-ktx:$coreKtxVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+    implementation 'com.google.android.gms:play-services-auth:18.1.0'
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-dynamic-links:19.1.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    testImplementation 'junit:junit:4.13'
+
+
+    implementation 'com.github.aabhasr1:OtpView:v1.1.2'
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+
+    implementation "androidx.recyclerview:recyclerview:$recyclerviewVersion"
+
+    implementation "com.github.bumptech.glide:glide:4.9.0"
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensionsVersion"
+
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttpLoggingInterceptorVersion"
+
+    implementation "com.google.code.gson:gson:$gsonVersion"
+
+    // ARGear
+    implementation(name: 'argear', ext: 'aar')
+
+    // Build off of TensorFlow Lite
+    implementation 'org.tensorflow:tensorflow-lite:1.14.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:1.14.0'
+
+    //Date Picker
+    implementation 'com.github.florent37:singledateandtimepicker:2.2.6'
+
+    //Exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.5'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.11.5'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.11.4'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.5'
+    implementation 'com.google.android.material:material:1.2.0'
+
+    //spinkit
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //date picker
+    implementation 'cn.aigestudio.wheelpicker:WheelPicker:1.1.3'
+
+    //GridLayout
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    implementation 'com.google.android.material:material:1.3.0-alpha02'
+
+    //Kotlin Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9"
+
+    //LightCompressor
+    implementation 'com.github.AbedElazizShe:LightCompressor:0.7.4'
+
+    //Pump
+    implementation'com.huxq17.pump:download:1.3.10'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    //lottie
+    implementation "com.airbnb.android:lottie:3.4.4"
+
+    //For Shimmer
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'io.supercharge:shimmerlayout:2.1.0'
+
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InboxFragment">
+
+    <TextView
+        android:id="@+id/no_notifications_tv"
+        android:textSize="16sp"
+        android:layout_centerInParent="true"
+        android:text="No notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<!--    <ProgressBar-->
+<!--        android:indeterminateTint="@color/darkerGrey"-->
+<!--        android:id="@+id/progressBar"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"/>-->
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:padding="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="Notifications"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/montserrat" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@id/top_bar"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_below="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/notification_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

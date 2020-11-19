@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.pvaindia.tiktokclone0",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 201035,
+      "versionName": "0.25b",
+      "enabled": true,
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="@drawable/bottomsheet_bg"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_margin="10sp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <com.mikhaellopez.circularimageview.CircularImageView
+           android:layout_width="40sp"
+           android:layout_height="40sp"
+           android:background="@drawable/white_bg_rounded"
+           android:src="@drawable/ic_baseline_person_24"
+          />
+       <EditText
+           android:id="@+id/comment"
+           android:layout_weight="1"
+           android:layout_marginStart="5dp"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:backgroundTint="#151414"
+           android:maxLines="4"
+           android:scrollbars="vertical"
+           android:gravity="start"
+           android:maxLength="600"
+           android:focusable="true"
+           android:textColor="#fff"
+           android:textSize="16sp"
+           android:inputType="text|textMultiLine"
+           android:imeOptions="actionSend"
+           android:textColorHint="#eee"
+           android:hint="Write a comment"/>
+       <ImageView
+           android:id="@+id/send"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_baseline_send_24"
+           android:layout_gravity="center"
+           android:background="?actionBarItemBackground"
+           android:tint="#fff"/>
+   </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#009688"
+        android:text="Comments"
+        android:layout_margin="10sp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv"/>
+</LinearLayout>

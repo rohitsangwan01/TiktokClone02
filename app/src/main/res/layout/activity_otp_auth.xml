@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".OtpAuthActvity">
+
+    <LinearLayout
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/icon_cross"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP Authentication"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            app:fontFamily="@font/montserrat_bold" />
+
+        <TextView
+            android:id="@+id/notice"
+            android:lineHeight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_notice"
+            app:fontFamily="@font/montserrat" />
+
+
+<!--        https://github.com/aabhasr1/OtpView-->
+
+        <in.aabhasjindal.otptextview.OtpTextView
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            app:height="40dp"
+            app:width="40dp"
+            app:bar_enabled="true"
+            app:bar_height="2dp"
+            app:length="6"
+            app:otp=""
+            app:otp_text_size="24dp"/>
+
+        <ImageView
+            android:id="@+id/verify"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/button_continue"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

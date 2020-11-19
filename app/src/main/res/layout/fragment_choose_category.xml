@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ChooseCategoryFragment">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/tajawal_black"
+        android:textSize="35sp"
+        android:text="Content you like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/heading"
+        android:layout_marginBottom="100dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="12dp"
+        android:rowCount="4">
+
+        <TextView
+            android:id="@+id/entertainment_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_purple"
+            android:backgroundTint="#A2223F"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Entertainment"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/drama_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_purple"
+            android:backgroundTint="#A2223F"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Drama"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/romantic_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_purple"
+            android:backgroundTint="#A2223F"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Romantic"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emotional_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_purple"
+            android:backgroundTint="#A2223F"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Emotional"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/india_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_purple"
+            android:backgroundTint="#A2223F"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="India"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/talent_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_purple"
+            android:backgroundTint="#A2223F"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Talent"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/random_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_purple"
+            android:backgroundTint="#A2223F"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="Random"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/all_tv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_button_purple"
+            android:backgroundTint="#A2223F"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:text="All"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </GridLayout>
+
+</RelativeLayout>
